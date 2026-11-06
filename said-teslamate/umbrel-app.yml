@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: said-teslamate
+category: automation
+name: TeslaMate
+version: "4.4.0"
+tagline: Journal de bord de ta Tesla, auto-hébergé
+icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-teslamate/icon.svg
+description: >-
+  TeslaMate enregistre trajets, charges, consommation, état de la batterie
+  et mises à jour de ta Tesla. Les tableaux de bord Grafana sont sur le
+  port 4748 (identifiant admin, mot de passe affiché par Umbrel).
+  À n'utiliser que sur le réseau local ou via Tailscale.
+developer: Adrian Kumpf
+website: https://docs.teslamate.org
+dependencies: []
+repo: https://github.com/teslamate-org/teslamate
+support: https://github.com/teslamate-org/teslamate/discussions
+port: 4747
+gallery: []
+path: ""
+defaultUsername: admin
+deterministicPassword: true
+releaseNotes: "Première version : TeslaMate 4.4.0, Grafana, PostgreSQL 17."
+submitter: Said
+submission: ""

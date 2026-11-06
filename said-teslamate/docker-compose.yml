@@ -1,0 +1,54 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: said-teslamate_teslamate_1
+      APP_PORT: 4000
+
+  teslamate:
+    image: teslamate/teslamate:4.4.0
+    restart: on-failure
+    stop_grace_period: 30s
+    cap_drop:
+      - all
+    depends_on:
+      - database
+    environment:
+      ENCRYPTION_KEY: ${APP_SEED}
+      DATABASE_USER: teslamate
+      DATABASE_PASS: ${APP_PASSWORD}
+      DATABASE_NAME: teslamate
+      DATABASE_HOST: database
+      DISABLE_MQTT: "true"
+      TZ: Europe/Paris
+
+  database:
+    image: postgres:17
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: teslamate
+      POSTGRES_PASSWORD: ${APP_PASSWORD}
+      POSTGRES_DB: teslamate
+
+  grafana:
+    image: teslamate/grafana:4.4.0
+    user: "1000:1000"
+    restart: on-failure
+    depends_on:
+      - database
+    ports:
+      - "4748:3000"
+    volumes:
+      - ${APP_DATA_DIR}/data/grafana:/var/lib/grafana
+    environment:
+      DATABASE_USER: teslamate
+      DATABASE_PASS: ${APP_PASSWORD}
+      DATABASE_NAME: teslamate
+      DATABASE_HOST: database
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${APP_PASSWORD}
+      TZ: Europe/Paris

@@ -1,0 +1,1 @@
+Dossier de la base de données (budget.db). Ne pas supprimer : il doit exister avant l'installation.

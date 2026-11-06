@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  # proxy Umbrel : impose la connexion Umbrel avant d'atteindre l'app
+  app_proxy:
+    environment:
+      APP_HOST: said-budget_web_1
+      APP_PORT: 3210
+
+  web:
+    # registre local de l'Umbrel (voir README › Umbrel)
+    image: localhost:5000/said-budget:1.0.0
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 10s
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3210
+      DB_FILE: /data/budget.db
+      # app Ollama d'Umbrel (sinon modifiable dans Réglages)
+      OLLAMA_URL: http://ollama_ollama_1:11434

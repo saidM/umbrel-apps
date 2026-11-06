@@ -5,7 +5,7 @@ name: Budget
 version: "1.0.0"
 tagline: Budget perso, abonnements, dettes et patrimoine
 # URL publique de icon.svg (dépôt du store) — voir README › Umbrel
-icon: https://raw.githubusercontent.com/saidM/umbrel-apps/main/said-budget/icon.svg
+icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-budget/icon.svg
 description: >-
   Suivi de budget self-hosted : import CSV BoursoBank et Trade Republic,
   classement fixe / dynamique assisté par Ollama, abonnements, dettes,

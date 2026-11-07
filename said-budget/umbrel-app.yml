@@ -2,13 +2,13 @@ manifestVersion: 1
 id: said-budget
 category: finance
 name: Budget
-version: "1.0.4"
+version: "1.0.5"
 tagline: Budget perso, abonnements, dettes et patrimoine
 # URL publique de icon.svg (dépôt du store) — voir README › Umbrel
 icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-budget/icon.svg
 description: >-
   Suivi de budget self-hosted : import CSV BoursoBank et Trade Republic,
-  classement fixe / dynamique assisté par Ollama, abonnements, dettes,
+  classement fixe / dynamique par règles, abonnements, dettes,
   budget mensuel et portefeuille d'actions comparé au S&P 500.
 developer: Said
 website: ""
@@ -20,6 +20,6 @@ gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: "Patrimoine : plusieurs biens, dont véhicules qui perdent de la valeur chaque mois. Dettes comptées à partir du premier remboursement."
+releaseNotes: "Retrait d'Ollama (suggestions de classement) et du graphique du patrimoine net."
 submitter: Said
 submission: ""

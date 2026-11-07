@@ -9,7 +9,7 @@ services:
 
   web:
     # registre local de l'Umbrel (voir README › Umbrel)
-    image: localhost:5000/said-budget:1.0.4
+    image: localhost:5000/said-budget:1.0.5
     user: "1000:1000"
     init: true
     restart: on-failure
@@ -20,5 +20,3 @@ services:
       HOST: 0.0.0.0
       PORT: 3210
       DB_FILE: /data/budget.db
-      # app Ollama d'Umbrel (sinon modifiable dans Réglages)
-      OLLAMA_URL: http://ollama_ollama_1:11434

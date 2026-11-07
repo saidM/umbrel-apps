@@ -2,7 +2,7 @@ manifestVersion: 1
 id: said-budget
 category: finance
 name: Budget
-version: "1.0.1"
+version: "1.0.2"
 tagline: Budget perso, abonnements, dettes et patrimoine
 # URL publique de icon.svg (dépôt du store) — voir README › Umbrel
 icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-budget/icon.svg
@@ -20,6 +20,6 @@ gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: "Icône pour l'écran d'accueil de l'iPhone."
+releaseNotes: "Patrimoine net : maison (+4 %/an en janvier), dettes, historique mensuel."
 submitter: Said
 submission: ""

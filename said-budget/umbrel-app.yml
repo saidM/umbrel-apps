@@ -2,7 +2,7 @@ manifestVersion: 1
 id: said-budget
 category: finance
 name: Budget
-version: "1.0.5"
+version: "1.0.6"
 tagline: Budget perso, abonnements, dettes et patrimoine
 # URL publique de icon.svg (dépôt du store) — voir README › Umbrel
 icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-budget/icon.svg
@@ -20,6 +20,6 @@ gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: "Retrait d'Ollama (suggestions de classement) et du graphique du patrimoine net."
+releaseNotes: "PER et performance 1 an par action ; interface allégée."
 submitter: Said
 submission: ""

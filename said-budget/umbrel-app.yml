@@ -2,7 +2,7 @@ manifestVersion: 1
 id: said-budget
 category: finance
 name: Budget
-version: "1.0.7"
+version: "1.0.8"
 tagline: Budget perso, abonnements, dettes et patrimoine
 # URL publique de icon.svg (dépôt du store) — voir README › Umbrel
 icon: https://raw.githubusercontent.com/saidM/umbrel-apps/master/said-budget/icon.svg
@@ -20,6 +20,6 @@ gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: "Biens dans une fenêtre ; PER corrigé (cache de la 1.0.6)."
+releaseNotes: "Répartition du portefeuille par secteur (camembert) sur la page Patrimoine."
 submitter: Said
 submission: ""
